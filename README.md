@@ -1,4 +1,4 @@
-# GCI Request Interceptor for .NET Core
+# GCI Request Interceptor for ASP.NET
 
 Exposes an API for collecting the heap usage and forcing the GC. Meant to be a runtime-specific counterpart of gci-proxy, implemented in C# made for ASP.NET applications.
 
