@@ -22,7 +22,8 @@ namespace GCI
                 switch (header)
                 {
                     case "ch":
-                        Console.WriteLine("Heap usage check at " + DateTimeOffset.Now.ToString());
+                        String usage = GC.GetTotalMemory(false).ToString();
+                        Console.WriteLine("Heap usage check at " + DateTimeOffset.Now.ToString() + " , " + usage + " bytes");
                         await context.Response.WriteAsync(GC.GetTotalMemory(false).ToString());
                         break;
 
